@@ -54,7 +54,7 @@ POST /otp/generate
 Тело запроса:
 
 {
-  "channel": "email" | "sms" | "telegram",
+  "channel": "email" | "sms" | "telegram" | "file",
   "destination": "example@example.com"
 }
 
@@ -81,6 +81,8 @@ Authorization: {token}
     channel: "telegram" — destination: "-123456789" (chat_id)
 
     channel: "sms" — destination "+79236976269"
+
+    channel: "file" — destination можно не указывать.
 
 POST /otp/validate
 
@@ -185,3 +187,11 @@ Authorization: {token}
   "method": "sms",
   "destination": "+79236976269"
 }
+
+Также можно использовать другие методы:
+
+    method: "email" + destination: "your@email.com"
+
+    method: "telegram" + destination: "-123456789" (chat_id)
+
+    method: "file" — destination можно не указывать.
