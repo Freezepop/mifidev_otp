@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = 'org.example'
+version = '1.0'
+
+sourceCompatibility = '17'
+
+def logbackVersion = '1.2.11'
+
+dependencies {
+    implementation 'org.postgresql:postgresql:42.7.2'
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+    implementation 'org.telegram:telegrambots:6.5.0'
+    implementation 'org.json:json:20231013'
+    implementation 'org.mindrot:jbcrypt:0.4'
+    implementation 'ch.qos.logback:logback-classic:1.5.13'
+    implementation 'org.opensmpp:opensmpp-core:3.0.0'
+}
+
+application {
+    mainClass = 'org.example.Main'
+}
