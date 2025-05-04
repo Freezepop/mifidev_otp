@@ -71,7 +71,7 @@ Authorization: {token}
 
 {
   "channel": "sms",
-  "destination": "79001112233"
+  "destination": "+79236976269"
 }
 
 Для других каналов:
