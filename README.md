@@ -54,7 +54,6 @@ POST /otp/generate
 Тело запроса:
 
 {
-  "operationId": "abc123",
   "channel": "email" | "sms" | "telegram",
   "destination": "example@example.com"
 }
@@ -71,7 +70,6 @@ POST /otp/generate
 Authorization: {token}
 
 {
-  "operationId": "login_approve",
   "channel": "sms",
   "destination": "79001112233"
 }
@@ -95,7 +93,6 @@ POST /otp/validate
 Тело запроса:
 
 {
-  "operationId": "abc123",
   "code": "123456"
 }
 
